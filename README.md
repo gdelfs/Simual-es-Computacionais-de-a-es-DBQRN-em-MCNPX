@@ -1,9 +1,9 @@
 # Simualações Computacionais de ações DBQRN em MCNPX
 
-### TEMA: SIMULAÇÕES COMPUTACIONAIS DE AÇÕES DQBRN PARA ANÁLISE DE RISCOS E MODELAGEM DE CONSEQUÊNCIAS
+### Tema: simualações computacionais de ações DBQRN para análise de riscos e modelagem de consequências
 
 
-### SUBPROJETO: MODELAGEM DE CONSEQUÊNCIAS E RISCO UTILIZANDO AS EQUAÇÕES BEIR V E VII PARA AÇÕES DQBRN COM USO SIMULADO DE FONTES RADIOATIVAS DISPERSAS NO AMBIENTE
+### Subprojeto: modelagem de consequências e risco utilizando as equações BEIR V e VII para ações DBQRN com uso simulado de fontes radioativas dispersas no ambiente
 
 O trabalho aqui exposto foi desenvolvido como parte de uma pesquisa científica, contendo modelagem de um ônibus urbano em linguagem MCNPX.
 
