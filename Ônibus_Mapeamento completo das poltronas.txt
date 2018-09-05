@@ -1,0 +1,279 @@
+
+c  
+c MINISTERIO DA DEFESA
+c EXERCITO BRASILEIRO
+c SECRETARIA DE CIENCIA E TECNOLOGIA
+c INSTITUTO MILITAR DE ENGENHARIA
+c
+c SEÇÃO DE ENGENHARIA NUCLEAR – SE/7
+c 
+c TEMA: SIMULAÇÕES COMPUTACIONAIS DE AÇÕES DQBRN PARA
+c ANÁLISE DE RISCOS E MODELAGEM DE CONSEQUÊNCIAS
+c Autor : Gabriel Delfino    
+c
+c    
+c    Bloco de células
+c
+701 100 -1 -1 imp:p=1  $ esfera de tecido equivalente 
+702 100 -1 -2 imp:p=1  $ esfera de tecido equivalente 
+703 100 -1 -3 imp:p=1  $ esfera de tecido equivalente 
+704 100 -1 -4 imp:p=1  $ esfera de tecido equivalente 
+705 100 -1 -5 imp:p=1  $ esfera de tecido equivalente 
+706 100 -1 -6 imp:p=1  $ esfera de tecido equivalente 
+707 100 -1 -7 imp:p=1  $ esfera de tecido equivalente 
+708 100 -1 -8 imp:p=1  $ esfera de tecido equivalente 
+709 100 -1 -9 imp:p=1  $ esfera de tecido equivalente 
+710 100 -1 -10 imp:p=1  $ esfera de tecido equivalente 
+711 100 -1 -11 imp:p=1  $ esfera de tecido equivalente 
+712 100 -1 -12 imp:p=1  $ esfera de tecido equivalente 
+713 100 -1 -13 imp:p=1  $ esfera de tecido equivalente 
+714 100 -1 -14 imp:p=1  $ esfera de tecido equivalente 
+715 100 -1 -15 imp:p=1  $ esfera de tecido equivalente 
+716 100 -1 -16 imp:p=1  $ esfera de tecido equivalente 
+717 100 -1 -17 imp:p=1  $ esfera de tecido equivalente 
+718 100 -1 -18 imp:p=1  $ esfera de tecido equivalente 
+719 100 -1 -19 imp:p=1  $ esfera de tecido equivalente 
+720 100 -1 -20 imp:p=1  $ esfera de tecido equivalente 
+1 12 -7.86 (22 -21 26 -25 27 -28) #2 imp:p=1 $placa de metal
+26 14 -8.03 (-255 26 -230) #2 imp:p=1 $ pneu 1 (negativo)  
+27 14 -8.03 (-256 26 -230) #2 imp:p=1 $ pneu 2 (negativo)  
+28 14 -8.03 (-257 26 -230) #2 imp:p=1 $ pneu 3 (negativo)
+29 14 -8.03 (-255 231 -25) #2 imp:p=1 $ pneu 1 (positivo)  
+30 14 -8.03 (-256 231 -25) #2 imp:p=1 $ pneu 2 (positivo)  
+31 14 -8.03 (-257 231 -25) #2 imp:p=1 $ pneu 3 (positivo)
+32 14 -8.03 (-256 -233 234) #2 imp:p=1 $ pneu 4 (negativo)
+33 14 -8.03 (-256 232 -235) #2 imp:p=1 $ pneu 4 (positivo)
+2 11 -0.00125 (22 -21 23 -24 26 -25) #701 #1 imp:p=1  $ carroceria interna, ar
+11 12 -7.86 (42 -41 43 -23 46 -45) #2 #26 #27 #28 #32 #29 #30 #31 #33 imp:p=1  $ carroceria externa chao  
+12 12 -7.86 (42 -41 24 -44 46 -45) #2 imp:p=1  $ carroceria externa teto  
+13 12 -7.86 (21 -41 43 -44 46 -45) #2 imp:p=1  $ carroceria externa frente 
+14 12 -7.86 (42 -22 43 -44 46 -45) #2 imp:p=1  $ carroceria externa traseira  
+21 12 -7.86 (60 -59 55 -56 45 -53) #2 imp:p=1   $ alca bagageiro 1  (positivo)
+22 12 -7.86 (-58 57 55 -56 45 -53) #2 imp:p=1   $ alca bagageiro 2 (positivo)
+23 12 -7.86 (60 -59 55 -56 54 -46) #2 imp:p=1   $ alca bagageiro 3  (negativo)
+24 12 -7.86 (-58 57 55 -56 54 -46) #2 imp:p=1   $ alca bagageiro 4 (negativo)
+17 12 -7.86 (52 -33 47 -48 45 -53) #2 #21 imp:p=1   $ bagageiro 1  (positivo)
+18 12 -7.86 (-51 33 47 -48 45 -53) #2 #22 imp:p=1   $ bagageiro 2 (positivo)
+19 12 -7.86 (52 -33 47 -48 54 -46) #2 #23 imp:p=1   $ bagageiro 3  (negativo)
+20 12 -7.86 (-51 33 47 -48 54 -46) #2 #24 imp:p=1   $ bagageiro 4 (negativo)
+25 12 -7.86 (63 -62 47 -61 64 -53) #2 #21 #29 imp:p=1   $ porta   (positivo)
+43 12 -7.86 (41 -141 147 -148 35 -135) #2 imp:p=1  $ janela frente
+15 12 -7.86 (42 -41 43 -44 46 -26) #2 imp:p=1  $ carroceria externa lado 1 (negativo) 
+16 12 -7.86 (42 -41 43 -44 25 -45) #2 imp:p=1  $ carroceria externa lado 2 (positivo)  
+c 3 0 -22:21:-26:25:-23:24 imp:p=0 $ superficie de controle
+3 0 123 imp:p=0
+501 13 -0.92 (32 -33 35 -36 30 -37) imp:p=1  $ encosto poltrona 1
+601 13 -0.92 (33 -34 35 -36 30 -31) imp:p=1  $ assento da poltrona 1
+502 LIKE 501 BUT TRCL=(45 0 0)
+602 LIKE 601 BUT TRCL=(45 0 0)
+503 LIKE 501 BUT TRCL=(168 0 0)
+603 LIKE 601 BUT TRCL=(168 0 0)
+504 LIKE 501 BUT TRCL=(213 0 0)
+604 LIKE 601 BUT TRCL=(213 0 0)
+505 LIKE 501 BUT TRCL=(0 102 0)
+605 LIKE 601 BUT TRCL=(0 102 0)
+506 LIKE 501 BUT TRCL=(45 102 0)
+606 LIKE 601 BUT TRCL=(45 102 0)
+507 LIKE 501 BUT TRCL=(168 102 0)
+607 LIKE 601 BUT TRCL=(168 102 0)
+508 LIKE 501 BUT TRCL=(213 102 0)
+608 LIKE 601 BUT TRCL=(213 102 0)
+509 LIKE 501 BUT TRCL=(0 204 0)
+609 LIKE 601 BUT TRCL=(0 204 0)
+510 LIKE 501 BUT TRCL=(45 204 0)
+610 LIKE 601 BUT TRCL=(45 204 0)
+511 LIKE 501 BUT TRCL=(168 204 0)
+611 LIKE 601 BUT TRCL=(168 204 0)
+512 LIKE 501 BUT TRCL=(213 204 0)
+612 LIKE 601 BUT TRCL=(213 204 0)
+513 LIKE 501 BUT TRCL=(0 -102 0)
+613 LIKE 601 BUT TRCL=(0 -102 0)
+514 LIKE 501 BUT TRCL=(45 -102 0)
+614 LIKE 601 BUT TRCL=(45 -102 0)
+515 LIKE 501 BUT TRCL=(168 -102 0)
+615 LIKE 601 BUT TRCL=(168 -102 0)
+516 LIKE 501 BUT TRCL=(213 -102 0)
+616 LIKE 601 BUT TRCL=(213 -102 0)
+517 LIKE 501 BUT TRCL=(0 -204 0)
+617 LIKE 601 BUT TRCL=(0 -204 0)
+518 LIKE 501 BUT TRCL=(45 -204 0)
+618 LIKE 601 BUT TRCL=(45 -204 0)
+519 LIKE 501 BUT TRCL=(168 -204 0)
+619 LIKE 601 BUT TRCL=(168 -204 0)
+520 LIKE 501 BUT TRCL=(213 -204 0)
+620 LIKE 601 BUT TRCL=(213 -204 0)
+521 LIKE 501 BUT TRCL=(0 306 0)
+621 LIKE 601 BUT TRCL=(0 306 0)
+522 LIKE 501 BUT TRCL=(45 306 0)
+622 LIKE 601 BUT TRCL=(45 306 0)
+523 LIKE 501 BUT TRCL=(168 306 0)
+623 LIKE 601 BUT TRCL=(168 306 0)
+524 LIKE 501 BUT TRCL=(213 306 0)
+624 LIKE 601 BUT TRCL=(213 306 0)
+525 LIKE 501 BUT TRCL=(0 -306 0)
+625 LIKE 601 BUT TRCL=(0 -306 0)
+526 LIKE 501 BUT TRCL=(45 -306 0)
+626 LIKE 601 BUT TRCL=(45 -306 0)
+527 LIKE 501 BUT TRCL=(168 -306 0)
+627 LIKE 601 BUT TRCL=(168 -306 0)
+528 LIKE 501 BUT TRCL=(213 -306 0)
+628 LIKE 601 BUT TRCL=(213 -306 0)
+529 LIKE 501 BUT TRCL=(0 408 0)
+629 LIKE 601 BUT TRCL=(0 408 0)
+530 LIKE 501 BUT TRCL=(45 408 0)
+630 LIKE 601 BUT TRCL=(45 408 0)
+531 LIKE 501 BUT TRCL=(168 408 0)
+631 LIKE 601 BUT TRCL=(168 408 0)
+532 LIKE 501 BUT TRCL=(213 408 0)
+632 LIKE 601 BUT TRCL=(213 408 0)
+533 LIKE 501 BUT TRCL=(0 -408 0)
+633 LIKE 601 BUT TRCL=(0 -408 0)
+534 LIKE 501 BUT TRCL=(45 -408 0)
+634 LIKE 601 BUT TRCL=(45 -408 0)
+535 LIKE 501 BUT TRCL=(168 -408 0)
+635 LIKE 601 BUT TRCL=(168 -408 0)
+536 LIKE 501 BUT TRCL=(213 -408 0)
+636 LIKE 601 BUT TRCL=(213 -408 0)
+537 LIKE 501 BUT TRCL=(0 -510 0)
+637 LIKE 601 BUT TRCL=(0 -510 0)
+538 LIKE 501 BUT TRCL=(45 -510 0)
+638 LIKE 601 BUT TRCL=(45 -510 0)
+539 LIKE 501 BUT TRCL=(168 -510 0)
+639 LIKE 601 BUT TRCL=(168 -510 0)
+540 LIKE 501 BUT TRCL=(213 -510 0)
+640 LIKE 601 BUT TRCL=(213 -510 0)
+541 LIKE 501 BUT TRCL=(0 -612 0)
+641 LIKE 601 BUT TRCL=(0 -612 0)
+542 LIKE 501 BUT TRCL=(45 -612 0)
+642 LIKE 601 BUT TRCL=(45 -612 0)
+543 LIKE 501 BUT TRCL=(0 510 0)
+643 LIKE 601 BUT TRCL=(0 510 0)
+544 LIKE 501 BUT TRCL=(45 510 0)
+644 LIKE 601 BUT TRCL=(45 510 0)
+545 LIKE 501 BUT TRCL=(168 510 0)
+645 LIKE 601 BUT TRCL=(168 510 0)
+546 LIKE 501 BUT TRCL=(213 510 0)
+646 LIKE 601 BUT TRCL=(213 510 0)
+599 LIKE 501 BUT TRCL=(0 632 -150)
+699 LIKE 601 BUT TRCL=(0 632 -150)
+c
+c  
+
+c   Bloco de superfícies
+c
+1 s -84.1 0.1 252 0.1
+2 s -39.1 0.1 252 0.1
+3 s 84.1 0.1 252 0.1 
+4 s 39.1 0.1 252 0.1
+5 s -84.1 102.1 252 0.1
+6 s -39.1 102.1 252 0.1
+7 s 84.1 102.1 252 0.1 
+8 s 39.1 102.1 252 0.1
+9 s -84.1 -60 252 0.1
+10 s -39.1 -60 252 0.1
+11 s 84.1 -60 252 0.1 
+12 s 39.1 -60 252 0.1
+13 s -84.1 204.1 252 0.1
+14 s -39.1 204.1 252 0.1
+15 s 84.1 204.1 252 0.1 
+16 s 39.1 204.1 252 0.1
+17 s -84.1 -162 252 0.1
+18 s -39.1 -162 252 0.1
+19 s 84.1 -162 252 0.1 
+20 s 39.1 -162 252 0.1
+123 so 750
+21 py 700
+22 py -700
+23 pz 0
+24 pz 380
+25 px 130
+26 px -130
+27 pz 190
+28 pz 190.2
+30 pz 231
+31 pz 251
+32 py -20
+33 py 0
+34 py 42
+35 px -129
+135 px 129.1
+36 px -84
+37 pz 331
+41 py 701
+141 py 701.5
+42 py -701
+43 pz -1
+44 pz 381
+45 px 131
+46 px -131
+47 pz 20
+48 pz 120
+147 pz 40
+148 pz 340
+51 py 240
+52 py -240
+53 px 131.5
+54 px -131.5
+55 pz 70
+56 pz 80
+57 py 110
+58 py 130
+59 py -110
+60 py -130
+61 pz 220
+62 py 670
+63 py 570
+64 px 131.1
+230 px -110
+231 px 110
+232 px 85
+233 px -85
+234 px -105
+235 px 105
+255 c/x 550 0 37.5
+256 c/x -300 0 37.5
+257 c/x -400 0 37.5
+c 
+c   
+
+c   Bloco de dados
+c
+c   Definição da fonte
+c
+mode p 
+c
+sdef pos 0 0 15 erg=0.662 par=2  
+c
+c   Definição de materiais
+c
+m12 6012 -0.002
+      26054 -0.998
+c
+c
+m13 1001 1 $poliuretano
+       6012 1
+       7014 1
+       8016 2
+c
+m100 7014 -0.026 $tecido equivalente
+       8016 -0.762
+       1001 -0.101
+       6012 -0.111
+c
+m11 7014 -0.780   $ ar
+       8016 -0.210
+       18040 -0.010
+c
+m14 1001 8 $borracha
+       6012 5
+c   Tally 
+c
+c
+f2:p 22  
+f6:p 701  
+c
+c
+c  
+nps 1000000 
+c
+ctme 5 
